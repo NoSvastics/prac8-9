@@ -1,0 +1,17 @@
+Пример команд:
+
+# Ты
+ git checkout -b feature/module-a
+ # перенести содержимое 02_TO_COMMIT/MY_BRANCH
+ git add .
+ git commit -m "feat: добавлена бизнес-логика и демонстрационная матрица A"
+ git push -u origin feature/module-a
+
+# Коллаборатор
+ git checkout -b feature/module-b
+ # перенести содержимое 02_TO_COMMIT/COLLABORATOR_BRANCH
+ git add .
+ git commit -m "feat: добавлена демонстрационная матрица B, консольный UI и тестирование"
+ git push -u origin feature/module-b
+
+После PR обе ветки объединяются в main.
